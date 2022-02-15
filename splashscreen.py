@@ -1,5 +1,6 @@
 import wx
 import wx.adv
+import time
 
 class MyFrame(wx.Frame):
 
@@ -18,6 +19,9 @@ class MyFrame(wx.Frame):
         splash.Show()
 
         self.Show()
+
+        time.sleep(3)
+        self.Close()
 
 if __name__ == "__main__":
     app = wx.App(False)
